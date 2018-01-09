@@ -51,22 +51,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Dynamic Flickering Light\FlickeringLight.cs" />
-     <Compile Include="Assets\StarterKit-MoveCamAI\Example\Scripts\GameController.cs" />
-     <Compile Include="Assets\StarterKit-MoveCamAI\Example\Scripts\SpawnEnemy.cs" />
-     <Compile Include="Assets\StarterKit-MoveCamAI\StarterKit\Scripts\Animation\CharacterAnimation.cs" />
-     <Compile Include="Assets\StarterKit-MoveCamAI\StarterKit\Scripts\Camera\CameraFirstPerson.cs" />
-     <Compile Include="Assets\StarterKit-MoveCamAI\StarterKit\Scripts\Camera\CameraTopDown.cs" />
-     <Compile Include="Assets\StarterKit-MoveCamAI\StarterKit\Scripts\Camera\CameraTopDownPan.cs" />
-     <Compile Include="Assets\StarterKit-MoveCamAI\StarterKit\Scripts\Enemy\EnemyAI.cs" />
-     <Compile Include="Assets\StarterKit-MoveCamAI\StarterKit\Scripts\Player\ClickToMove.cs" />
-     <Compile Include="Assets\StarterKit-MoveCamAI\StarterKit\Scripts\Player\DirectionalMove.cs" />
-     <Compile Include="Assets\StarterKit-MoveCamAI\StarterKit\Scripts\Player\FirstPersonMove.cs" />
-     <Compile Include="Assets\StarterKit-MoveCamAI\StarterKit\Scripts\Player\LastPosition.cs" />
-     <Compile Include="Assets\StarterKit-MoveCamAI\StarterKit\Scripts\Player\Tidy.cs" />
      <Compile Include="Assets\ZombieMovement.cs" />
      <None Include="Assets\Dynamic Flickering Light\readme.txt" />
-     <None Include="Assets\StarterKit-MoveCamAI\StarterKit\Documentation\ReadMe.txt" />
  <Reference Include="Facebook.Unity.Settings">
  <HintPath>C:/Users/Giovanni/progetto/useless-project/Useless repo/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
  </Reference>
