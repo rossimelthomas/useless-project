@@ -1,34 +1,34 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class ZombieMovement : MonoBehaviour {
+using System.Collections;
 
-    const int movementSpeed = 1;
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
+public class ZombieMovement : MonoBehaviour
 
-        transform.position += Vector3.forward * Time.deltaTime * movementSpeed;
-        
-    }
+{
 
-
-    void OnTriggerEnter(Collider other)
+    public int moveSpeed = 1;  //per second 
+    Vector3 computerDirection = Vector3.left;
+    Vector3 moveDirection = Vector3.zero;
+    Vector3 newPosition = Vector3.zero;
+    void Start()
     {
-        if (other.gameObject.tag == "player")
-        {
-            other.SendMessage("die");
-        }
-        else
-        { 
-            transform.Rotate(new Vector3(0, Random.Range(0, 1) >= 0.5 ? -50 : 50, 0) * Time.deltaTime);
-        } 
+
     }
-
-
+    void Update()
+    {
+        Vector3 newPosition = computerDirection * (moveSpeed * Time.deltaTime);
+        newPosition = transform.position + newPosition;
+        //newPosition.x = Mathf.Clamp(newPosition.x, -101, 126);
+        transform.position = newPosition;
+        if (newPosition.x > 126)
+        {
+            newPosition.x = 126;
+            computerDirection.x *= -1;
+        }
+        else if (newPosition.x < -101)
+        {
+            newPosition.x = -101;
+            computerDirection.x *= -1;
+        }
+    }
 }
