@@ -51,6 +51,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\WizardBakeVertAO.cs" />
      <Compile Include="Assets\ZombieMovement.cs" />
      <None Include="Assets\Dynamic Flickering Light\readme.txt" />
  <Reference Include="Facebook.Unity.Settings">
