@@ -52,6 +52,9 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\FlashLight.cs" />
+     <Compile Include="Assets\OpenTreasure.cs" />
+     <Compile Include="Assets\update\ActionOnClick.cs" />
+     <Compile Include="Assets\update\MouseHover.cs" />
      <Compile Include="Assets\WizardBakeVertAO.cs" />
      <Compile Include="Assets\ZombieMovement.cs" />
      <None Include="Assets\Dynamic Flickering Light\readme.txt" />
